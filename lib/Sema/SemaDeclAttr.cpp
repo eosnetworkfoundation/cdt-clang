@@ -471,7 +471,7 @@ static void handleEosioActionAttribute(Sema &S, Decl *D, const AttributeList &AL
 
 static void handleEosioReadOnlyAttribute(Sema &S, Decl *D, const AttributeList &AL) {
   D->addAttr(::new (S.Context)
-                 EosioActionAttr(AL.getRange(), S.Context, AL.getAttributeSpellingListIndex()));
+                 EosioReadOnlyAttr(AL.getRange(), S.Context, AL.getAttributeSpellingListIndex()));
 }
 
 static void handleEosioTableAttribute(Sema &S, Decl *D, const AttributeList &AL) {

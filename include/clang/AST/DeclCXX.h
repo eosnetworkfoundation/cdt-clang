@@ -737,7 +737,6 @@ public:
   EosioRicardianAttr*  getEosioRicardianAttr() const { return getAttr<EosioRicardianAttr>(); }
   EosioReadOnlyAttr* getEosioReadOnlyAttr() const { return getAttr<EosioReadOnlyAttr>(); }
 
-
   CXXRecordDecl *getCanonicalDecl() override {
     return cast<CXXRecordDecl>(RecordDecl::getCanonicalDecl());
   }
